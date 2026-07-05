@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom & Timetable Scheduler</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🎓 Smart Classroom & Timetable Scheduler</h1>
+</header>
+
+<main class="dashboard">
+
+    <!-- Form Card -->
+    <section class="card">
+
+        <h2>Add Schedule</h2>
+
+        <input type="text" id="subject" placeholder="Subject Name">
+
+        <input type="text" id="teacher" placeholder="Teacher Name">
+
+        <input type="text" id="room" placeholder="Classroom">
+
+        <select id="day">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+        </select>
+
+        <input type="time" id="time">
+
+        <button onclick="addSchedule()">
+            Add Schedule
+        </button>
+
+    </section>
+
+    <!-- Timetable Card -->
+    <section class="card">
+
+        <h2>Timetable</h2>
+
+        <table id="scheduleTable">
+
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
