@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom & Timetable Scheduler</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Smart Classroom & Timetable Scheduler</h2>
+</header>
+
+<div class="container">
+
+    <h3>Add Schedule</h3>
+
+    <label>Subject</label>
+    <input type="text" id="subject">
+
+    <label>Teacher</label>
+    <input type="text" id="teacher">
+
+    <label>Classroom</label>
+    <input type="text" id="room">
+
+    <label>Day</label>
+    <select id="day">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+    </select>
+
+    <label>Time</label>
+    <input type="time" id="time">
+
+    <button onclick="addSchedule()">Add Schedule</button>
+
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Teacher</th>
+                <th>Room</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</div>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
