@@ -1,0 +1,141 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    padding:20px 40px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1{
+    font-size:30px;
+    font-weight:600;
+}
+
+/* Dashboard */
+.dashboard{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:25px;
+}
+
+/* Cards */
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+/* Form */
+input,
+select{
+    width:100%;
+    padding:12px 15px;
+    margin-bottom:15px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,.25);
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1e40af;
+    transform:translateY(-2px);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    font-size:15px;
+}
+
+table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+table tr:nth-child(even){
+    background:#f9fafb;
+}
+
+table tr:hover{
+    background:#eef4ff;
+}
+
+/* Delete Button */
+td button{
+    width:auto;
+    padding:8px 14px;
+    background:#dc2626;
+    font-size:14px;
+}
+
+td button:hover{
+    background:#b91c1c;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+.dashboard{
+    grid-template-columns:1fr;
+}
+
+.header{
+    text-align:center;
+}
+
+}
